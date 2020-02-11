@@ -48,6 +48,7 @@ figure {
 }
 
 input {
+    display: block;
     width: calc(500px - 20px);
     height: 40px;
     border: none;
@@ -59,9 +60,11 @@ input {
 }
 input::placeholder {
     color: #445162;
+
 }
 
 textarea {
+    display: block;
     width: calc(500px - 20px);
     border: none;
     padding: 10px;
@@ -108,6 +111,12 @@ button {
     display: table;
     content: ' ';
 }
+
+.link {
+    color: white;
+    text-decoration: none;
+}
+
 .row:after {
     clear: both;
 }
@@ -182,6 +191,10 @@ button {
     float: left;
     width: 43%;
     text-align: right;
+}
+
+.about-product_items {
+    list-style: none;
 }
 
 .about-product_item {
@@ -319,6 +332,7 @@ button {
     color: white;
 }
 
+
 .card.card__first {
     margin-top: 250px;
 }
@@ -332,7 +346,8 @@ button {
     width: 33.3%;
 }
 
-.card  > header {
+.card  > .card_title {
+    display: block;
     font-size: 24px;
     line-height: 22px;
     padding-top: 18px;
@@ -358,6 +373,7 @@ button {
 }
 
 .card .card_price {
+    display: block;
     background-color: white;
     color: #445162;
     text-align: center;
@@ -381,7 +397,17 @@ button {
     font-weight: bold;
 }
 
+.form_wrapper {
+    width: 50%;
+    float: left;
+}
+
 .form {
     max-width: 500px;
+    float: right;
+}
+
+.contact {
+    width: 50%;
     float: left;
 }
